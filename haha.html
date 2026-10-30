@@ -29,27 +29,43 @@
             </button>
         </div>
 
-        <!-- Card Tamu -->
+        <!-- Card Tamu (Desain Modern dengan Thumbnail & Animasi) -->
         <div
-            class="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-8 flex flex-col items-center text-center border border-gray-100">
-            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-6">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                    </path>
-                </svg>
+            class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col border border-gray-100 overflow-hidden group">
+
+            <!-- Thumbnail Cover -->
+            <div class="relative h-52 w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Ilustrasi Tamu"
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <h2 class="absolute bottom-4 left-6 text-2xl font-bold text-white">Akses Pengunjung</h2>
             </div>
-            <h2 class="text-2xl font-bold text-gray-800 mb-3">Tamu</h2>
-            <p class="text-gray-500 mb-8 flex-grow">Jelajahi halaman beranda dan lihat informasi publik tanpa memerlukan
-                akun.</p>
-            <button
-                class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-6 rounded-xl transition-colors">
-                Masuk sebagai Tamu
-            </button>
+
+            <!-- Content Area -->
+            <div class="p-6 flex flex-col flex-grow bg-white">
+                <p class="text-slate-500 mb-8 flex-grow leading-relaxed text-sm md:text-base">
+                    Selamat datang! Sebagai tamu, Anda memiliki akses pratinjau untuk menelusuri ekosistem platform
+                    kami. Jelajahi fitur-fitur publik, lihat galeri portofolio, dan pelajari bagaimana solusi teknologi
+                    kami dapat membantu alur kerja Anda tanpa perlu melakukan proses pendaftaran. Temukan berbagai
+                    wawasan menarik yang telah kami sediakan khusus untuk Anda.
+                </p>
+
+                <!-- Animated Button -->
+                <button
+                    class="relative w-full flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-medium py-3.5 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/30 active:scale-95">
+                    Mulai Eksplorasi
+                    <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </button>
+            </div>
+
         </div>
     </div>
 
 </body>
 
 </html>
-
